@@ -1,0 +1,172 @@
+if (typeof _cls_config === "undefined") _cls_config = {};
+
+/* Per Ria's request */
+_cls_config.enabledByChance = 1;
+_cls_config.domIncludeCSSSelector = true;
+
+/* BEGIN ajax */
+_cls_config.ajaxRecordMetadata="never";
+_cls_config.ajaxRecordRequestBody="never";
+_cls_config.ajaxRecordRequestHeaders="never";
+_cls_config.ajaxRecordResponseBody="never";
+_cls_config.ajaxRecordResponseHeaders="never";
+_cls_config.interceptAjax=true;
+_cls_config.ajaxRecordStats="always";
+/* END ajax */
+
+/*BEGIN MASKING*/
+
+//Value Masking (INPUT)
+_cls_config.valueMaskingMode = "blacklist";
+_cls_config.maskBlacklistValueById = [];
+_cls_config.maskBlacklistValueByClass = ["sessioncamexclude"];
+_cls_config.valueBlacklistMaskSimpleSelector = [
+    "#__BVID__110",
+    "#__BVID__114",
+    "#__BVID__118",
+    "#__BVID__153",
+    "#__BVID__157",
+    "#__BVID__161",
+    "#__BVID__165",
+    "#nationality",
+    "#__BVID__173",
+    "#__BVID__177",
+    "#__BVID__181",
+    ".text-14",
+    ".points-group",
+    "#__BVID__329",
+    "#__BVID__333",
+    "#__BVID__337",
+    ".vti__input",
+    "#__BVID__349",
+    "#__BVID__353",
+    ".tag-your-details-name",
+    ".tag-your-details-email",
+    ".tag-your-details-cardnumber",
+    "#firstname input",
+    "#lastname input",
+    "#email input",
+    "#city input",
+    "#address input",
+    "#streetNumber input",
+    "#zipCode input",
+    "#nationality",
+    "#nationalID input",
+    "#bussinesPhone input",
+    "#homePhone input",
+    "#name input",
+    "#surname input",
+    "#email input",
+    "#telephone input",
+    "[id^=roomData][class^=guest].name input"
+];
+
+//DOM Masking
+_cls_config.domMaskingMode = "blacklist";
+_cls_config.domBlacklistMaskContentById = [];
+_cls_config.domBlacklistMaskContentByClass = ["sessioncamhidetext", "sessioncamexclude"];
+_cls_config.domBlacklistMaskSimpleSelector = [
+    "#__BVID__110",
+    "#__BVID__114",
+    "#__BVID__118",
+    "#__BVID__153",
+    "#__BVID__157",
+    "#__BVID__161",
+    "#__BVID__165",
+    "#nationality",
+    "#__BVID__173",
+    "#__BVID__177",
+    "#__BVID__181",
+    ".text-14",
+    ".points-group",
+    "#__BVID__329",
+    "#__BVID__333",
+    "#__BVID__337",
+    ".vti__input",
+    "#__BVID__349",
+    "#__BVID__353",
+    ".tag-your-details-name",
+    ".tag-your-details-email",
+    ".tag-your-details-cardnumber",
+    ".block-profile b",
+    ".logged-user .username",
+    ".logged-user .points-group span",
+    ".client-name",
+    ".block-points span"
+];
+
+/*END MASKING*/
+
+/* OOTB */
+_cls_config.iframesAutoInject = true;
+_cls_config.recordMouseMoves = true;
+_cls_config.recordScrolls = true;
+_cls_config.recordHovers = true;
+_cls_config.clientAttributesEnabled = true;
+_cls_config.clientAttributeMaxLength = 500;
+_cls_config.collectStruggles = true;
+/* END OF OOTB*/
+
+/* BEGIN page performance */
+_cls_config.resourceTimingRecordEnabled = true;
+_cls_config.resourceTimingRecordEnabledByChance = 0.05;
+_cls_config.webVitalsRecordEnabled = true;
+/* END page performance */
+
+/* BEGIN exposure */
+_cls_config.recordScrollReach = true;
+/* END exposure */
+
+/* BEGIN form tracking IM */
+_cls_config.domFormAnalysisReporting = true;
+_cls_config.domFormValidationTracking = true;
+/* END form tracking IM */
+
+/* BEGIN window property */
+_cls_config.pageAttributesEnabled = true;
+/* END window property */
+
+_cls_config.autoInjectGlassvox=true;
+
+/*Global Properties*/
+_cls_config.captureGlobalObjects=[
+    'nhDataLayer.page.businessType',
+    'nhDataLayer.user.logged',
+    'nhDataLayer.user.profile',
+    'nhDataLayer.hotel.available',
+    'nhDataLayer.bookingProcess.isNHRPrice',
+    'nhDataLayer.bookingProcess.roomDetails.board',
+    'nhDataLayer.bookingProcess.roomDetails.rate', 
+    'nhDataLayer.bookingProcess.roomDetails.type', 
+    'nhDataLayer.totalRevenue',
+    'nhDataLayer.user.cid', 
+    'nhDataLayer.bookingProcess.checkIn', 
+    'nhDataLayer.bookingProcess.checkOut', 
+    'nhDataLayer.hotel.id', 
+    'nhDataLayer.bookingProcess.rooms', 
+    'nhDataLayer.currency.default', 
+    'nhDataLayer.bookingProcess.type',
+    'nhDataLayer.bookingProcess.nights',
+    'nhDataLayer.bookingProcess.babies',
+    'nhDataLayer.bookingProcess.children',
+    'nhDataLayer.bookingProcess.adults'
+    ];
+    
+    _cls_config.captureGlobalObjectsOnSegmentChange=true;
+
+_cls_config.useIdSelectors = false;
+_cls_config.detectorPath = 'https://cdn.gbqofs.com/sv/a/';
+_cls_config.reportURI = "https://report.nhhotels.glassboxdigital.io/reporting/ccd7cd45-c678-4554-9d38-f18da5fbf885/cls_report";
+_cls_config.initDetectorOnInteractive = true;
+
+//Resource Recording
+_cls_config.resourcesRecordEnabled = true;
+_cls_config.resourcesRecordCount = 5;
+_cls_config.resourcesRecordChance = 0.2;
+_cls_config.resourcesRecordAllowCors = true;
+_cls_config.resourceRecordCssOnly = false;
+
+//191861
+_cls_config.SCIntegration=true;
+_cls_config.SCIntegrationURLsContainList=["analytics.google.com"];
+_cls_config.SCIntegrationKeyList=["cd90","cm13"];
